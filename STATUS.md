@@ -44,6 +44,15 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 4.9 | Commit da atualização do index.html | ✅ Concluído | 2026-10-12 | Git log: 6b1801e |
 | 4.10 | Commit final do STATUS.md | ✅ Concluído | 2026-10-12 | Git log: 64c7928 |
 
+## Etapa 5 — Conectar ao GitHub e fazer push (aprovada em 2026-10-12)
+| Item | Descrição | Status | Concluído em | Verificação |
+|------|-----------|--------|--------------|-------------|
+| 5.1 | Adicionar remote origin ao GitHub | ✅ Concluído | 2026-10-12 | git remote -v |
+| 5.2 | Renomear branch para main | ✅ Concluído | 2026-10-12 | git branch |
+| 5.3 | Fetch do repositório remoto | ✅ Concluído | 2026-10-12 | git fetch |
+| 5.4 | Merge com históricos não relacionados | ✅ Concluído | 2026-10-12 | git merge |
+| 5.5 | Push para GitHub | ✅ Concluído | 2026-10-12 | Git push bem-sucedido |
+
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
 |-------|--------|---------|---------|----------|
