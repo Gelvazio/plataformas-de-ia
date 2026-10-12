@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard de Plataformas de IA</title>
     <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --card-bg: white;
+            --text-primary: #333;
+            --text-secondary: #666;
+            --text-tertiary: #999;
+            --border-color: #e0e0e0;
+            --input-bg: white;
+            --modal-bg: white;
+            --table-header-bg: #667eea;
+            --table-header-text: white;
+            --table-border: #e0e0e0;
+            --table-even: #f9f9f9;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        [data-theme="dark"] {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --card-bg: #1e1e2e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #b0b0b0;
+            --text-tertiary: #808080;
+            --border-color: #3a3a4a;
+            --input-bg: #2a2a3a;
+            --modal-bg: #1e1e2e;
+            --table-header-bg: #667eea;
+            --table-header-text: white;
+            --table-border: #3a3a4a;
+            --table-even: #2a2a3a;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            --shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.4);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -13,9 +47,10 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--bg-gradient);
             min-height: 100vh;
             padding: 20px;
+            transition: background 0.3s ease;
         }
 
         .container {
@@ -24,29 +59,47 @@
         }
 
         header {
-            background: white;
+            background: var(--card-bg);
             border-radius: 12px;
             padding: 30px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         h1 {
-            color: #333;
+            color: var(--text-primary);
             margin-bottom: 10px;
         }
 
         .subtitle {
-            color: #666;
+            color: var(--text-secondary);
             font-size: 14px;
         }
 
+        .theme-toggle {
+            background: var(--input-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 24px;
+            color: var(--text-primary);
+            transition: all 0.3s;
+        }
+
+        .theme-toggle:hover {
+            border-color: #667eea;
+        }
+
         .controls {
-            background: white;
+            background: var(--card-bg);
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
             display: flex;
             gap: 15px;
             flex-wrap: wrap;
@@ -61,9 +114,11 @@
         .search-box input {
             width: 100%;
             padding: 10px 15px;
-            border: 2px solid #e0e0e0;
+            border: 2px solid var(--border-color);
             border-radius: 8px;
             font-size: 14px;
+            background: var(--input-bg);
+            color: var(--text-primary);
         }
 
         .search-box input:focus {
@@ -73,10 +128,12 @@
 
         .filter-select {
             padding: 10px 15px;
-            border: 2px solid #e0e0e0;
+            border: 2px solid var(--border-color);
             border-radius: 8px;
             font-size: 14px;
             cursor: pointer;
+            background: var(--input-bg);
+            color: var(--text-primary);
         }
 
         .filter-select:focus {
@@ -109,17 +166,17 @@
         }
 
         .card {
-            background: white;
+            background: var(--card-bg);
             border-radius: 12px;
             padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: var(--shadow-hover);
         }
 
         .card-header {
@@ -145,24 +202,24 @@
         .card-title {
             font-size: 18px;
             font-weight: bold;
-            color: #333;
+            color: var(--text-primary);
         }
 
         .card-category {
             font-size: 12px;
-            color: #999;
+            color: var(--text-tertiary);
             margin-top: 5px;
         }
 
         .card-description {
-            color: #666;
+            color: var(--text-secondary);
             font-size: 14px;
             line-height: 1.5;
             margin-bottom: 15px;
         }
 
         .card-price {
-            background: #f5f5f5;
+            background: var(--input-bg);
             padding: 10px;
             border-radius: 8px;
             font-size: 13px;
@@ -170,7 +227,7 @@
 
         .card-price-label {
             font-weight: bold;
-            color: #333;
+            color: var(--text-primary);
         }
 
         .modal {
@@ -191,7 +248,7 @@
         }
 
         .modal-content {
-            background: white;
+            background: var(--modal-bg);
             border-radius: 12px;
             max-width: 800px;
             max-height: 90vh;
@@ -206,13 +263,13 @@
             align-items: center;
             margin-bottom: 20px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #e0e0e0;
+            border-bottom: 2px solid var(--border-color);
         }
 
         .modal-title {
             font-size: 24px;
             font-weight: bold;
-            color: #333;
+            color: var(--text-primary);
         }
 
         .close-btn {
@@ -220,11 +277,11 @@
             border: none;
             font-size: 30px;
             cursor: pointer;
-            color: #999;
+            color: var(--text-tertiary);
         }
 
         .close-btn:hover {
-            color: #333;
+            color: var(--text-primary);
         }
 
         .modal-section {
@@ -238,8 +295,17 @@
         }
 
         .modal-section p {
-            color: #666;
+            color: var(--text-secondary);
             line-height: 1.6;
+        }
+
+        .modal-section a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .modal-section a:hover {
+            text-decoration: underline;
         }
 
         .price-table {
@@ -252,13 +318,14 @@
         .price-table td {
             padding: 10px;
             text-align: left;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid var(--table-border);
+            color: var(--text-primary);
         }
 
         .price-table th {
-            background: #f5f5f5;
+            background: var(--input-bg);
             font-weight: bold;
-            color: #333;
+            color: var(--text-primary);
         }
 
         .comparison-table {
@@ -271,16 +338,17 @@
         .comparison-table td {
             padding: 12px;
             text-align: center;
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--table-border);
+            color: var(--text-primary);
         }
 
         .comparison-table th {
-            background: #667eea;
-            color: white;
+            background: var(--table-header-bg);
+            color: var(--table-header-text);
         }
 
         .comparison-table tr:nth-child(even) {
-            background: #f9f9f9;
+            background: var(--table-even);
         }
 
         .selected-count {
@@ -294,7 +362,7 @@
         .no-results {
             text-align: center;
             padding: 40px;
-            color: #999;
+            color: var(--text-tertiary);
             font-size: 18px;
         }
 
@@ -313,8 +381,11 @@
 <body>
     <div class="container">
         <header>
-            <h1>🤖 Dashboard de Plataformas de IA</h1>
-            <p class="subtitle">Documentação completa de plataformas de IA, modelos, preços e conceitos técnicos</p>
+            <div>
+                <h1>🤖 Dashboard de Plataformas de IA</h1>
+                <p class="subtitle">Documentação completa de plataformas de IA, modelos, preços e conceitos técnicos</p>
+            </div>
+            <button class="theme-toggle" id="themeToggle" title="Alternar tema">🌙</button>
         </header>
 
         <div class="controls">
@@ -895,6 +966,24 @@
 
         // Inicialização
         renderPlatforms(platforms);
+
+        // Alternância de tema
+        const themeToggle = document.getElementById('themeToggle');
+        let isDark = localStorage.getItem('theme') === 'dark';
+
+        function updateTheme() {
+            document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            themeToggle.textContent = isDark ? '☀️' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        // Inicializar tema
+        updateTheme();
+
+        themeToggle.addEventListener('click', () => {
+            isDark = !isDark;
+            updateTheme();
+        });
     </script>
 </body>
 </html>

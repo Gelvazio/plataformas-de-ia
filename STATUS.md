@@ -61,6 +61,14 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 6.3 | Testar e refinar | ✅ Concluído | 2026-10-12 | Teste completo |
 | 6.4 | Commit e push | ✅ Concluído | 2026-10-12 | Git log: d868269 |
 
+## Etapa 7 — Adicionar temas dark/light ao dashboard (aprovada em 2026-10-12)
+| Item | Descrição | Status | Concluído em | Verificação |
+|------|-----------|--------|--------------|-------------|
+| 7.1 | Implementar variáveis CSS para temas | ✅ Concluído | 2026-10-12 | Teste visual |
+| 7.2 | Adicionar botão de alternância de tema | ✅ Concluído | 2026-10-12 | Teste funcional |
+| 7.3 | Salvar preferência no localStorage | ✅ Concluído | 2026-10-12 | Teste persistência |
+| 7.4 | Commit e push | ⬜ Pendente | — | Git log |
+
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
 |-------|--------|---------|---------|----------|
