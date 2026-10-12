@@ -78,6 +78,14 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 8.4 | Melhorar animações e transições | ✅ Concluído | 2026-10-12 | Teste visual |
 | 8.5 | Commit e push | ✅ Concluído | 2026-10-12 | Git log: 7ad938d |
 
+## Etapa 9 — Adicionar MiniMax AI ao AGENTS.md e dashboard (aprovada em 2026-10-12)
+| Item | Descrição | Status | Concluído em | Verificação |
+|------|-----------|--------|--------------|-------------|
+| 9.1 | Adicionar seção MiniMax AI ao AGENTS.md | ✅ Concluído | 2026-10-12 | Leitura do arquivo |
+| 9.2 | Atualizar comparativo de custos com MiniMax | ✅ Concluído | 2026-10-12 | Leitura do arquivo |
+| 9.3 | Adicionar MiniMax ao dashboard (index.html) | ✅ Concluído | 2026-10-12 | Visualização |
+| 9.4 | Commit e push | ⬜ Pendente | — | Git log |
+
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
 |-------|--------|---------|---------|----------|

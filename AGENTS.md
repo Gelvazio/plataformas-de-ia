@@ -1495,6 +1495,134 @@ configure({
 
 ---
 
+## 20. MiniMax AI
+
+### Descrição
+A MiniMax AI é uma plataforma chinesa que oferece modelos de IA de alta performance para texto, imagem, áudio e vídeo. Conhecida pelos modelos M3 e M2 com contexto longo e capacidades multimodais.
+
+### Modelos Principais
+
+#### MiniMax-M3
+- **Características:** Modelo flagship mais recente
+- **Capacidades:** Contexto até 512K tokens, multimodal, raciocínio avançado
+- **Uso:** Aplicações complexas, documentos longos, vídeo
+- **Contexto:** 512K tokens (padrão), até 1M em alguns casos
+
+#### MiniMax-M3.1 Flash Preview
+- **Características:** Versão rápida do M3
+- **Capacidades:** Respostas rápidas, multimodal
+- **Uso:** Aplicações em tempo real, prototipagem
+
+#### MiniMax-M2.7
+- **Características:** Versão estabelecida
+- **Capacidades:** Tarefas gerais de IA, código
+- **Uso:** Aplicações comerciais
+
+#### MiniMax-M2.7-highspeed
+- **Características:** Versão de alta velocidade
+- **Capacidades:** Respostas muito rápidas
+- **Uso:** Aplicações em tempo real
+
+#### MiniMax-M2.5 / M2.1 / M2
+- **Características:** Versões anteriores
+- **Capacidades:** Tarefas gerais
+- **Uso:** Aplicações estabelecidas
+
+#### H3 (Video)
+- **Características:** Modelo de geração de vídeo
+- **Capacidades:** Criação de vídeos a partir de texto
+- **Uso:** Marketing, conteúdo multimídia
+
+### Estrutura de Preços (2026)
+
+#### MiniMax-M3 (Padrão - 50% off permanente)
+
+| Contexto | Input | Output | Cache Read |
+|----------|-------|--------|------------|
+| ≤512K tokens | $0.30 | $1.20 | $0.06 |
+| >512K tokens | $0.60 | $2.40 | $0.12 |
+
+#### MiniMax-M3 (Priority - 1.5x padrão)
+
+| Contexto | Input | Output | Cache Read |
+|----------|-------|--------|------------|
+| ≤512K tokens | $0.45 | $1.80 | $0.09 |
+| >512K tokens | $0.90 | $3.60 | $0.18 |
+
+#### MiniMax-M2.7
+
+| Modelo | Input | Output | Cache Read | Cache Write |
+|--------|-------|--------|------------|-------------|
+| M2.7 | $0.30 | $1.20 | $0.06 | $0.375 |
+| M2.7-highspeed | $0.60 | $2.40 | $0.06 | $0.375 |
+
+#### MiniMax-M2.5 / M2.1 / M2
+
+| Modelo | Input | Output | Cache Read | Cache Write |
+|--------|-------|--------|------------|-------------|
+| M2.5 / M2.1 / M2 | $0.30 | $1.20 | $0.03 | $0.375 |
+| M2.5-highspeed / M2.1-highspeed | $0.60 | $2.40 | $0.03 | $0.375 |
+
+### Planos de Assinatura
+
+#### Token Plan (Individuais)
+
+| Plano | Preço | Melhor Para | Agentes | Quota |
+|-------|-------|-------------|---------|-------|
+| Plus | $22/mês | Projetos pessoais e prototipagem | 3-4 agentes | ~1.7B tokens/mês |
+| Max | $55/mês | Coding diário com agentes e multimodal | 4-5 agentes | ~5.1B tokens/mês |
+| Ultra | $132/mês | Workflows pesados de agentes | 6-7 agentes | ~10B tokens/mês |
+
+#### M Plan (Individuais)
+
+| Tier | Preço | Modelo de Texto | Modelo de Vídeo | Uso Relativo |
+|------|-------|-----------------|-----------------|---------------|
+| Go | - | M3.1 Flash Preview | Não incluído | 1x |
+| Explore | - | M3.1 Flash Preview | H3 | 3x |
+| Build | - | M3.1 Flash Preview | H3 | 7.5x |
+
+#### Speech Recognition (Audio-to-Text)
+- **Preço:** Variável por uso
+- **Streaming:** Suportado
+- **Speaker Diarization:** Disponível
+
+#### Hailuo 2.3 Video Generation
+- **Plano Max:** 3 clips/dia
+- **Plano Ultra:** 5 clips/dia
+
+### Recursos Adicionais
+
+#### Credits (Pré-pago)
+| Preço | Credits |
+|-------|---------|
+| $5 | 5,000 credits |
+| $25 | 25,000 credits |
+| $100 | 100,000 credits |
+
+- **Conversão:** 1,000 credits = $1
+- **Uso:** Credits cobram os mesmos recursos que Token Plan
+
+#### Context Window
+- **MiniMax-M3:** 1M tokens
+- **MiniMax-M2.7:** 1M tokens
+- **Built for:** Documentos longos e grandes codebases
+
+#### Multimodal
+- **Entendimento nativo:** Imagem e vídeo input
+- **Geração de imagem:** ✓ em todos os planos
+- **Geração de voz:** ✓ em todos os planos
+- **Geração de vídeo:** ✗ Go, ✓ Explore/Max (3/dia), ✓ Build/Ultra (5/dia)
+
+### Links
+- **Site:** https://platform.minimax.io
+- **Download:** https://agent.minimax.io/download
+- **Pricing:** https://platform.minimax.io/docs/pricing/overview
+- **Docs:** https://platform.minimax.io/docs
+
+---
+
+## 21. Moonshot AI (Kimi)
+
 ### Descrição
 A Moonshot AI oferece a plataforma Kimi com modelos de geração e raciocínio avançado. Conhecida pelo contexto longo e capacidade de processar documentos extensos.
 
@@ -1582,6 +1710,8 @@ A Moonshot AI oferece a plataforma Kimi com modelos de geração e raciocínio a
 | Baidu | ERNIE 4.5 Turbo | ~$0.11 | ~$0.44 | ~$0.275 |
 | Zhipu | GLM-5.3-Flash | ~$0.11 | ~$0.39 | ~$0.25 |
 | Moonshot | Kimi K2.5 | ~$0.56 | ~$2.94 | ~$1.75 |
+| MiniMax | M3 (≤512K) | $0.30 | $1.20 | $0.75 |
+| MiniMax | M2.7 | $0.30 | $1.20 | $0.75 |
 | xAI | Grok 4.7 (curto) | $2.00 | $6.00 | $4.00 |
 | xAI | Grok 4.20 (curto) | $1.25 | $2.50 | $1.875 |
 | JEV AI | jev-latest | $0.042 | $0.00 | $0.021 |
@@ -1647,6 +1777,7 @@ A Moonshot AI oferece a plataforma Kimi com modelos de geração e raciocínio a
 - **Baidu Qianfan (ERNIE):** https://cloud.baidu.com/product/qianfan
 - **Zhipu AI (GLM):** https://www.bigmodel.cn
 - **Moonshot AI (Kimi):** https://www.moonshot.cn
+- **MiniMax AI:** https://platform.minimax.io
 
 ---
 
