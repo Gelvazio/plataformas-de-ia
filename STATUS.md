@@ -84,7 +84,7 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 9.1 | Adicionar seção MiniMax AI ao AGENTS.md | ✅ Concluído | 2026-10-12 | Leitura do arquivo |
 | 9.2 | Atualizar comparativo de custos com MiniMax | ✅ Concluído | 2026-10-12 | Leitura do arquivo |
 | 9.3 | Adicionar MiniMax ao dashboard (index.html) | ✅ Concluído | 2026-10-12 | Visualização |
-| 9.4 | Commit e push | ✅ Concluído | 2026-10-12 | Git log: fd571cb |
+| 9.4 | Commit e push | ✅ Concluído | 2026-10-12 | Git log: 904cf5a |
 
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
