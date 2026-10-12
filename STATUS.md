@@ -59,7 +59,7 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 6.1 | Criar dashboard interativo com dados do AGENTS.md | ✅ Concluído | 2026-10-12 | Visualização |
 | 6.2 | Implementar funcionalidades (filtro, busca, comparação) | ✅ Concluído | 2026-10-12 | Teste funcional |
 | 6.3 | Testar e refinar | ✅ Concluído | 2026-10-12 | Teste completo |
-| 6.4 | Commit e push | ⬜ Pendente | — | Git log |
+| 6.4 | Commit e push | ✅ Concluído | 2026-10-12 | Git log: d868269 |
 
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
