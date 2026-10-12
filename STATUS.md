@@ -67,7 +67,7 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 7.1 | Implementar variáveis CSS para temas | ✅ Concluído | 2026-10-12 | Teste visual |
 | 7.2 | Adicionar botão de alternância de tema | ✅ Concluído | 2026-10-12 | Teste funcional |
 | 7.3 | Salvar preferência no localStorage | ✅ Concluído | 2026-10-12 | Teste persistência |
-| 7.4 | Commit e push | ⬜ Pendente | — | Git log |
+| 7.4 | Commit e push | ✅ Concluído | 2026-10-12 | Git log: 7b2617b |
 
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
