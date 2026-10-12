@@ -53,6 +53,14 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 5.4 | Merge com históricos não relacionados | ✅ Concluído | 2026-10-12 | git merge |
 | 5.5 | Push para GitHub | ✅ Concluído | 2026-10-12 | Git push bem-sucedido |
 
+## Etapa 6 — Transformar index.html em dashboard que lê AGENTS.md (aprovada em 2026-10-12)
+| Item | Descrição | Status | Concluído em | Verificação |
+|------|-----------|--------|--------------|-------------|
+| 6.1 | Criar dashboard interativo com dados do AGENTS.md | ✅ Concluído | 2026-10-12 | Visualização |
+| 6.2 | Implementar funcionalidades (filtro, busca, comparação) | ✅ Concluído | 2026-10-12 | Teste funcional |
+| 6.3 | Testar e refinar | ✅ Concluído | 2026-10-12 | Teste completo |
+| 6.4 | Commit e push | ⬜ Pendente | — | Git log |
+
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
 |-------|--------|---------|---------|----------|
