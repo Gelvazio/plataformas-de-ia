@@ -69,6 +69,15 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 7.3 | Salvar preferência no localStorage | ✅ Concluído | 2026-10-12 | Teste persistência |
 | 7.4 | Commit e push | ✅ Concluído | 2026-10-12 | Git log: 7b2617b |
 
+## Etapa 8 — Melhorar tema escuro e adicionar efeitos visuais (aprovada em 2026-10-12)
+| Item | Descrição | Status | Concluído em | Verificação |
+|------|-----------|--------|--------------|-------------|
+| 8.1 | Corrigir textos visíveis no tema escuro | ✅ Concluído | 2026-10-12 | Teste visual |
+| 8.2 | Adicionar ícones em todo o dashboard | ✅ Concluído | 2026-10-12 | Teste visual |
+| 8.3 | Adicionar efeitos de luz e bordas | ✅ Concluído | 2026-10-12 | Teste visual |
+| 8.4 | Melhorar animações e transições | ✅ Concluído | 2026-10-12 | Teste visual |
+| 8.5 | Commit e push | ⬜ Pendente | — | Git log |
+
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
 |-------|--------|---------|---------|----------|
