@@ -76,7 +76,7 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 8.2 | Adicionar ícones em todo o dashboard | ✅ Concluído | 2026-10-12 | Teste visual |
 | 8.3 | Adicionar efeitos de luz e bordas | ✅ Concluído | 2026-10-12 | Teste visual |
 | 8.4 | Melhorar animações e transições | ✅ Concluído | 2026-10-12 | Teste visual |
-| 8.5 | Commit e push | ⬜ Pendente | — | Git log |
+| 8.5 | Commit e push | ✅ Concluído | 2026-10-12 | Git log: 7ad938d |
 
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
