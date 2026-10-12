@@ -22,11 +22,13 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | Item | Descrição | Status | Concluído em | Verificação |
 |------|-----------|--------|--------------|-------------|
 | 2.1 | Criar arquivo AGENTS.md com detalhes de plataformas de IA e preços | ✅ Concluído | 2026-10-12 | Leitura do arquivo criado |
+| 2.2 | Adicionar plataformas adicionais (Verdent, Devin, Cursor, Kiro, Antigravity, Claude Code, Codex, IAs chinesas) | ✅ Concluído | 2026-10-12 | Leitura do arquivo atualizado |
 
 ## Etapa 3 — Commit das tarefas (aprovada em 2026-10-12)
 | Item | Descrição | Status | Concluído em | Verificação |
 |------|-----------|--------|--------------|-------------|
-| 3.1 | Commit dos arquivos index.html e AGENTS.md | ⬜ Pendente | — | Git log |
+| 3.1 | Commit dos arquivos index.html e AGENTS.md | ✅ Concluído | 2026-10-12 | Git log: bd911ae |
+| 3.2 | Commit da atualização do AGENTS.md com plataformas adicionais | ⬜ Pendente | — | Git log |
 
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
