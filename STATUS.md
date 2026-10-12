@@ -39,7 +39,9 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 4.4 | Adicionar RAG ao AGENTS.md | ✅ Concluído | 2026-10-12 | Leitura do arquivo atualizado |
 | 4.5 | Adicionar JEV AI ao AGENTS.md | ✅ Concluído | 2026-10-12 | Leitura do arquivo atualizado |
 | 4.6 | Atualizar comparativo de custos com xAI e JEV | ✅ Concluído | 2026-10-12 | Leitura do arquivo atualizado |
-| 4.7 | Commit das adições ao AGENTS.md | ⬜ Pendente | — | Git log |
+| 4.7 | Commit das adições ao AGENTS.md | ✅ Concluído | 2026-10-12 | Git log: 59d609d |
+| 4.8 | Atualizar index.html com referência ao AGENTS.md | ✅ Concluído | 2026-10-12 | Leitura do arquivo atualizado |
+| 4.9 | Commit da atualização do index.html | ⬜ Pendente | — | Git log |
 
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
