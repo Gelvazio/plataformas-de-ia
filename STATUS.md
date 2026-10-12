@@ -28,7 +28,7 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | Item | Descrição | Status | Concluído em | Verificação |
 |------|-----------|--------|--------------|-------------|
 | 3.1 | Commit dos arquivos index.html e AGENTS.md | ✅ Concluído | 2026-10-12 | Git log: bd911ae |
-| 3.2 | Commit da atualização do AGENTS.md com plataformas adicionais | ⬜ Pendente | — | Git log |
+| 3.2 | Commit da atualização do AGENTS.md com plataformas adicionais | ✅ Concluído | 2026-10-12 | Git log: f2897e9 |
 
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
