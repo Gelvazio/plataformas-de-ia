@@ -910,7 +910,590 @@ A Zhipu AI (BigModel.cn) oferece a família de modelos GLM, incluindo modelos de
 
 ---
 
-## 19. Moonshot AI (Kimi)
+## 19. xAI (Grok)
+
+### Descrição
+A xAI (SpaceXAI) é a empresa de IA de Elon Musk, oferece a família de modelos Grok. Conhecida pela velocidade, baixa taxa de alucinação e forte integração com o ecossistema X (Twitter).
+
+### Modelos Principais
+
+#### Grok 4.7
+- **Características:** Modelo flagship mais recente
+- **Capacidades:** Tool calling avançado, raciocínio configurável, baixa alucinação
+- **Contexto:** 500K tokens
+- **Uso:** Código, conhecimento geral, agentes
+
+#### Grok 4.6
+- **Características:** Versão anterior do flagship
+- **Capacidades:** Tool calling, raciocínio
+- **Contexto:** 500K tokens
+- **Uso:** Aplicações gerais
+
+#### Grok 4.5
+- **Características:** Modelo estabelecido
+- **Capacidades:** Raciocínio, código
+- **Contexto:** 500K tokens
+- **Uso:** Aplicações comerciais
+
+#### Grok 4.20
+- **Características:** Modelo de alta performance
+- **Capacidades:** Velocidade líder de mercado, tool calling, aderência estrita a prompts
+- **Contexto:** 1M tokens
+- **Uso:** Aplicações em tempo real
+
+#### Grok-build-0.1
+- **Características:** Modelo para desenvolvimento
+- **Capacidades:** Build e deploy
+- **Contexto:** 256K tokens
+- **Uso:** CI/CD, automação
+
+### Estrutura de Preços (2026)
+
+#### Grok 4.7 (Preços por 1M tokens)
+
+| Contexto | Input | Cached | Output |
+|----------|-------|--------|--------|
+| Curto (<200K) | $2.00 | $0.50 | $6.00 |
+| Longo (≥200K) | $4.00 | $1.00 | $12.00 |
+
+#### Grok 4.6 / 4.5 (Preços por 1M tokens)
+
+| Contexto | Input | Cached | Output |
+|----------|-------|--------|--------|
+| Curto (<200K) | $2.00 | $0.30/$0.50 | $6.00 |
+| Longo (≥200K) | $4.00 | $0.60/$1.00 | $12.00 |
+
+#### Grok 4.20 (Preços por 1M tokens)
+
+| Contexto | Input | Cached | Output |
+|----------|-------|--------|--------|
+| Curto (<200K) | $1.25 | $0.20 | $2.50 |
+| Longo (≥200K) | $2.50 | $0.40 | $5.00 |
+
+#### Grok-build-0.1 (Preços por 1M tokens)
+
+| Contexto | Input | Cached | Output |
+|----------|-------|--------|--------|
+| Curto (<200K) | $1.00 | $0.20 | $2.00 |
+| Longo (≥200K) | $2.00 | $0.40 | $4.00 |
+
+#### Grok 4.7 Fast (Cursor e Grok Build apenas)
+- **Abaixo 200K:** Input $4.00, Cached $1.00, Output $12.00 por 1M tokens
+- **Acima 200K:** Input $6.00, Cached $1.50, Output $18.00 por 1M tokens
+- **Nota:** 2x o preço padrão, disponível apenas via Cursor e Grok Build
+
+### Outros Modelos
+
+#### Grok Voice
+- **Preço:** $0.08 por minuto
+- **Uso:** Transcrição e geração de áudio
+
+#### Grok Imagine
+- **Preço:** $15.00 por 1M caracteres (texto para imagem)
+- **Imagens:** A partir de $0.02 por imagem
+- **Uso:** Geração de imagens
+
+### Planos de Assinatura
+
+| Plano | Preço | Características |
+|-------|-------|------------------|
+| Free | $0/mês | Limites generosos, modelos básicos |
+| SuperGrok | $30/mês | Grok 4.7, Grok Bot, Connectors, rate limits maiores, SOC 2 compliance |
+| SuperGrok Plus | $100/mês | Tudo do SuperGrok + vídeo 1080p, uso significativamente maior, prioridade |
+| SuperGrok Heavy | $300/mês | Tudo do SuperGrok Plus + uso máximo, velocidade máxima, suporte dedicado |
+| Enterprise | Sob consulta | Rate limits customizados, infraestrutura dedicada, SSO, compliance |
+
+### Links
+- **Site:** https://x.ai
+- **API:** https://x.ai/api
+- **Docs:** https://docs.x.ai
+- **Pricing:** https://x.ai/pricing
+
+---
+
+## 20. Grok Bot
+
+### Descrição
+O Grok Bot é um time de agentes de IA da xAI que trabalham em computadores na nuvem, fazem login em suas ferramentas e executam tarefas multi-step. Não tem preço standalone - vem incluído em planos do Cursor e SuperGrok.
+
+### Características
+- **Computador na nuvem:** Cada Bot tem seu próprio computador
+- **Login em ferramentas:** Gmail, Salesforce, Zendesk, etc.
+- **Execução autônoma:** Continua trabalhando mesmo com laptop fechado
+- **Routines:** Aprende workflows de uma demonstração e executa automaticamente
+- **Agendamento:** Executa tarefas em horários ou após eventos
+- **Multi-bot:** Vários Bots podem rodar em paralelo
+- **Handoff:** Bots podem passar trabalho entre si
+
+### Como Funciona
+1. **Você descreve a tarefa:** Mensageia o Bot como faria com um colega
+2. **Bot executa:** Entra nas ferramentas, navega, clica, preenche formulários
+3. **Aprovação:** Para em pontos críticos para sua aprovação
+4. **Conclusão:** Termina a tarefa e reporta o resultado
+
+### O Que Pode / Não Pode Fazer
+
+| Capacidade | Pode? | Observações |
+|------------|-------|-------------|
+| Login em apps sem API | Sim | Você digita senhas, 2FA, CAPTCHAs |
+| Trabalhar com laptop fechado | Sim | Roda na nuvem |
+| Múltiplos Bots simultâneos | Sim | Cada Bot tem sua tela |
+| Aprender workflow de demo | Sim | Grava até 10 minutos de passos |
+| Executar em agendamento | Sim | Routines em horários/eventos |
+| Isolar dados entre Bots | Não | Bots compartilham computador e arquivos |
+| Bypassar CAPTCHAs | Não | Devolve para você |
+| Fazer chamadas legais/financeiras | Não | Deve ter regras "Ask first" |
+
+### Estrutura de Preços (2026)
+
+**Nota:** Grok Bot não tem plano standalone. Incluído em planos elegíveis.
+
+| Plano | Preço | Uso do Grok Bot |
+|-------|-------|-----------------|
+| Cursor Pro | $20/mês | Uso semanal, abaixo do Pro+ |
+| Cursor Pro+ | $60/mês | Uso semanal generoso, abaixo do Ultra |
+| Cursor Ultra | $200/mês | Maior uso semanal (igual ao SuperGrok Heavy) |
+| SuperGrok (linked) | $30/mês | Uso vinculado, abaixo do Plus |
+| SuperGrok Plus (linked) | $100/mês | Uso vinculado generoso, abaixo do Heavy |
+| SuperGrok Heavy (linked) | $300/mês | Maior uso vinculado |
+| Cursor Teams Standard | $40/seat/mês | Segue allowance do seat |
+| Cursor Teams Premium | $120/seat/mês | Segue allowance do seat |
+| Enterprise | Custom | Gerenciado pelo admin |
+
+### Uso e Limites
+- **Reset semanal:** Uso reinicia semanalmente
+- **On-demand:** Uso extra cobrado por token/modelo se ativado
+- **Free trial:** Crédito de uso com janela de 7 dias (não é plano free)
+- **Planos não stack:** Se tem Cursor e SuperGrok, usa o allowance maior
+
+### Links
+- **Site:** https://x.ai/bot
+- **Docs:** https://cursor.com/docs/grok-bot
+
+---
+
+## 21. Agent Harness
+
+### Descrição
+Um Agent Harness é a camada de software que transforma um modelo de linguagem em um agente capaz de realizar trabalho. Ele conecta o modelo ao contexto e ferramentas, coordena o loop do agente e mantém o estado da sessão.
+
+### Como Funciona
+
+#### Responsabilidades do Harness vs Modelo
+
+| Responsabilidade | Modelo | Harness |
+|------------------|--------|---------|
+| Inferir intenção | ✅ | ❌ |
+| Decompor tarefas | ✅ | ❌ |
+| Escolher ferramentas | ✅ | ❌ |
+| Interpretar outputs | ✅ | ❌ |
+| Decidir quando parar | ✅ | ❌ |
+| Assemblar request | ❌ | ✅ |
+| Dispatch de ferramentas | ❌ | ✅ |
+| Gerenciar contexto | ❌ | ✅ |
+| Aplicar permissões | ❌ | ✅ |
+| Gerenciar estado | ❌ | ✅ |
+| Compaction | ❌ | ✅ |
+| Extensões | ❌ | ✅ |
+
+#### O Loop do Agente
+
+Cada viagem ao redor do loop executa 6 passos em ordem:
+
+1. **Assemblar o request:**
+   - System prompt com regras e papel
+   - Ferramentas disponíveis
+   - Arquivos de instrução e memória
+   - Conversação até agora
+
+2. **Chamar o modelo:**
+   - Modelo recebe o request
+   - Retorna resposta ou solicitação de tool call
+
+3. **Para tool request:**
+   - Harness aplica regras de permissão
+   - Rota a chamada para o ambiente
+   - Captura o resultado
+
+4. **Retornar ao modelo:**
+   - Harness retorna resultado
+   - Modelo decide: chamar outra tool, pedir input, ou terminar
+
+5. **Associar ao estado:**
+   - Mensagens, tool calls, resultados
+   - Mudanças de código
+   - Apresentar status na UI
+
+6. **Decisão de turno:**
+   - Chamar modelo novamente?
+   - Compactar conversação?
+   - Parar?
+
+#### Seis Coisas que o Harness Decide
+
+O modelo não pode decidir essas coisas por si mesmo:
+
+1. **Turns:** Chamar modelo novamente, compactar, ou parar
+2. **Tools:** Quais ações existem, como são descritas, resultados voltam
+3. **Context:** O que vai em cada request, o que é dropado
+4. **Permissions:** Quais calls rodam, quais pedem aprovação, quais são recusadas
+5. **State:** O que sobrevive ao fim do request, sessão ou processo
+6. **Extensions:** Onde ferramentas, skills e policies de terceiros se conectam
+
+### Implementações
+
+#### Microsoft Agent Framework Harness
+- **Composição:** Usa blocos existentes do Agent Framework
+- **Componentes:**
+  - Chat client: conecta ao modelo
+  - Chat pipeline: function invocation, message injection, history persistence, compaction
+  - Agent/context providers: instruções, tools, memory, todo state, modes
+  - Middleware/decorators: approval handling, observability, bounded looping
+  - Application UX: streaming, progress display, input collection
+
+#### VS Code Agent Harness
+- **Coordenação:** Prepara requests, coordena tool calls e approvals
+- **Retorno:** Captura resultados, retorna ao modelo
+- **Associação:** Associa mensagens, tool calls, code changes à sessão
+- **Apresentação:** Mostra status atual no VS Code
+
+#### Google Antigravity Harness
+- **Modelo:** Gemini 3.8 Flash
+- **Subagents:** Delegação paralela de tarefas
+- **Artifacts:** Rastreamento e verificação de outputs
+- **Segurança:** Safe defaults, tool approval gates
+
+### Links
+- **VS Code Agent Harness:** https://code.visualstudio.com/docs/agents/concepts/agent-harnesses
+- **Microsoft Agent Framework:** https://learn.microsoft.com/en-us/agent-framework/agents/harness
+- **AI Engineering Playbook:** https://karthikreddy-7.github.io/ai-engineering-playbook/docs/05-agents/agent-harness
+- **Berkeley Lecture:** https://scalable-ai.eecs.berkeley.edu/S2026/assets/lecture_slides/lecture_25.pdf
+
+---
+
+## 22. RAG (Retrieval-Augmented Generation)
+
+### Descrição
+RAG (Retrieval-Augmented Generation) é uma técnica que combina um sistema de recuperação com um modelo generativo. O sistema primeiro recupera documentos relevantes de um corpus usando busca vetorial, e então usa um modelo generativo para produzir texto baseado nos documentos recuperados.
+
+### Como Funciona
+
+#### Pipeline RAG Básico
+
+1. **Ingestão de Dados:**
+   - Documentos são carregados (PDF, TXT, HTML, etc.)
+   - Texto é extraído e processado
+   - Documentos são divididos em chunks (tipicamente 512-1024 tokens)
+   - Chunks têm overlap (tipicamente 50-200 tokens) para manter contexto
+
+2. **Embedding:**
+   - Cada chunk é convertido em vetor usando embedding model
+   - Vetores representam significado semântico
+   - Modelos comuns: OpenAI text-embedding-3, SentenceTransformers, etc.
+
+3. **Vector Store:**
+   - Vetores são armazenados em banco de dados vetorial
+   - Opções: Milvus, Pinecone, Weaviate, Chroma, FAISS, etc.
+   - Índices são criados para busca eficiente (IVF, HNSW, GPU_CAGRA, etc.)
+
+4. **Retrieval:**
+   - Query do usuário é embedded no mesmo espaço
+   - Busca semântica encontra chunks mais similares
+   - Top-K chunks são recuperados (tipicamente 5-20)
+
+5. **Reranking (opcional):**
+   - Modelo de reranking reordena resultados por relevância
+   - Melhora precisão dos chunks recuperados
+   - Modelos: Cohere Rerank, Cross-Encoder, etc.
+
+6. **Generation:**
+   - Chunks recuperados são inseridos no prompt do LLM
+   - LLM gera resposta baseada no contexto recuperado
+   - Resposta é retornada ao usuário
+
+### Configuração
+
+#### Exemplo de Configuração YAML (NVIDIA RAG)
+
+```yaml
+# Vector Store Configuration
+vector_store:
+  name: "milvus"
+  url: "http://localhost:19530"
+  index_type: "GPU_CAGRA"
+  search_type: "dense"
+  enable_gpu_index: true
+  enable_gpu_search: true
+  default_collection_name: "my_rag_collection"
+
+# NV-Ingest Configuration
+nv_ingest:
+  message_client_hostname: "localhost"
+  message_client_port: 7670
+  extract_text: true
+  extract_tables: true
+  extract_charts: true
+  chunk_size: 512
+  chunk_overlap: 150
+
+# LLM Configuration
+llm:
+  server_url: "http://localhost:8999"
+  model_name: "meta/llama-3.1-70b-instruct"
+  temperature: 0.7
+  max_tokens: 2048
+```
+
+#### Exemplo de Configuração Python (Mini RAG)
+
+```python
+from mini import AgenticRAG, LLMConfig, RetrievalConfig
+
+# Configure LLM
+llm_config = LLMConfig(
+    model="gpt-4o-mini",
+    api_key="your-api-key",
+    temperature=0.7,
+    timeout=60.0,
+    max_retries=3
+)
+
+# Configure retrieval
+retrieval_config = RetrievalConfig(
+    top_k=10,              # Recuperar 10 chunks inicialmente
+    rerank_top_k=3,        # Manter 3 após reranking
+    similarity_threshold=0.7
+)
+
+# Create RAG instance
+rag = AgenticRAG(
+    vector_store=vector_store,
+    embedding_model=embedding_model,
+    llm_config=llm_config,
+    retrieval_config=retrieval_config
+)
+```
+
+#### Exemplo com Milvus
+
+```python
+from pymilvus import MilvusClient
+
+# Create client
+milvus_client = MilvusClient(uri="./milvus_demo.db")
+collection_name = "my_rag_collection"
+
+# Create collection
+if milvus_client.has_collection(collection_name):
+    milvus_client.drop_collection(collection_name)
+
+milvus_client.create_collection(
+    collection_name=collection_name,
+    dimension=768,  # Match embedding model dimension
+)
+
+# Insert documents
+for doc in documents:
+    embedding = embedding_model.encode(doc["text"])
+    milvus_client.insert(
+        collection_name=collection_name,
+        data={
+            "id": doc["id"],
+            "vector": embedding,
+            "text": doc["text"],
+            "metadata": doc["metadata"]
+        }
+    )
+
+# Search
+query_embedding = embedding_model.encode(query)
+results = milvus_client.search(
+    collection_name=collection_name,
+    data=[query_embedding],
+    limit=5,
+    output_fields=["text", "metadata"]
+)
+```
+
+### Componentes Principais
+
+#### Vector Stores
+- **Milvus:** Open-source, escalável, suporta GPU
+- **Pinecone:** Managed, fácil de usar, escalável
+- **Weaviate:** Open-source, multimodal, GraphQL API
+- **Chroma:** Open-source, simples, local-first
+- **FAISS:** Open-source, Facebook, pure Python/C++
+
+#### Embedding Models
+- **OpenAI:** text-embedding-3-small ($0.02/M), text-embedding-3-large ($0.13/M)
+- **Cohere:** embed-english-v3.0, embed-multilingual-v3.0
+- **SentenceTransformers:** all-MiniLM-L6-v2, all-mpnet-base-v2 (open-source)
+- **HuggingFace:** MTEB leaderboard para comparação
+
+#### Reranking Models
+- **Cohere:** rerank-english-v3.0, rerank-multilingual-v3.0
+- **Cross-Encoder:** ms-marco-MiniLM-L-6-v2
+- **BGE:** bge-reranker-base, bge-reranker-large
+
+### Links
+- **NVIDIA RAG Blueprint:** https://github.com/NVIDIA-AI-Blueprints/rag
+- **Milvus Bootcamp:** https://github.com/milvus-io/bootcamp
+- **Haystack Tutorials:** https://github.com/deepset-ai/haystack-tutorials
+- **Mini RAG:** https://vivek-78ace06c.mintlify.app/guides/configuration
+
+---
+
+## 23. JEV AI (TypeSafe AI)
+
+### Descrição
+JEV (System One) é um modelo de avaliação da TypeSafe AI que classifica, roteia e pontua estado estruturado. Diferente de modelos de chat, JEV não gera texto - retorna escolhas, scores e probabilidades booleanas.
+
+### Como Funciona
+
+#### Conceito Básico
+- **Input:** `state` (o que olhar) + `questions` (o que decidir)
+- **Output:** Respostas tipadas com probabilidades
+- **Não é chat:** Não aceita prompt ou retorna texto
+- **Zero prose:** Retorna apenas dados estruturados
+
+#### Tipos de Perguntas
+
+| Tipo | O que faz | Critério | Campos de resposta | Limites |
+|------|------------|----------|-------------------|---------|
+| `choice` | Escolhe uma opção de um conjunto | Map de opções para descrições | `choice`, `probabilities` | Até 255 opções |
+| `score` | Avalia estado contra rubrica ordenada | Array de níveis (menor → maior) | `score`, `probabilities` | 2-10 níveis |
+| `boolean` | Estima se statement é true | Descrições opcionais true/false | `probability` | Nenhum |
+| `noul` | Yes/No/NoIdea | Descrições yes/no | `choice`, `confidence` | Nenhum |
+
+#### Exemplo de Uso (TypeScript com AI SDK)
+
+```typescript
+import { experimental_decide } from 'ai';
+
+const result = await experimental_decide({
+  model: 'typesafe-ai/jev',
+  state: {
+    subject: ticket.subject,
+    message: ticket.message,
+    customerTier: ticket.customerTier,
+  },
+  questions: [
+    {
+      type: 'choice',
+      question: 'Which team should handle this ticket?',
+      choices: {
+        billing: 'Charges, invoices, and refunds',
+        technical: 'Bugs, outages, and integrations',
+        other: 'None of the other options apply',
+      },
+    },
+    {
+      type: 'score',
+      question: 'How urgent is this ticket?',
+      levels: [
+        'Low urgency - can wait days',
+        'Medium urgency - should be addressed within 24h',
+        'High urgency - needs immediate attention',
+      ],
+    },
+    {
+      type: 'boolean',
+      question: 'Is this a security issue?',
+    },
+  ],
+});
+
+console.log(result.choices[0].choice); // 'billing', 'technical', or 'other'
+console.log(result.choices[0].probabilities); // { billing: 0.85, technical: 0.10, other: 0.05 }
+console.log(result.scores[0].score); // 0, 1, or 2
+console.log(result.booleans[0].probability); // 0.0 to 1.0
+```
+
+### Configuração
+
+#### Variáveis de Ambiente (.env)
+
+```bash
+# Para TypeSafe API direta
+TYPESAFE_API_KEY=your-typesafe-api-key
+TYPESAFE_BASE_URL=https://api.typesafe.ai
+
+# Para OpenRouter
+OPENAI_API_KEY=your-openrouter-key
+OPENAI_BASE_URL=https://openrouter.ai/api/v1
+JEV_MODEL=~typesafe/jev-latest
+
+# Para Vercel AI Gateway
+VERCEL_OIDC_TOKEN=your-vercel-oidc-token
+```
+
+#### Configuração Python
+
+```python
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Configuração básica
+config = {
+    "OPENAI_API_KEY": os.getenv("OPENAI_API_KEY"),
+    "OPENAI_BASE_URL": "https://openrouter.ai/api/v1",
+    "MODEL": "openai/gpt-6-luna",  # LLM para tool calling
+    "SMART_MODEL": "openai/gpt-6-sol",  # Para routing/benchmarks
+    "JEV_BACKEND": "typesafe",  # ou "adapter" para fallback sem JEV
+    "JEV_MODEL": "~typesafe/jev-latest",  # ~ sempre aponta para latest
+    "TYPESAFE_BASE_URL": "https://openrouter.ai/api",
+    "TYPESAFE_API_KEY": os.getenv("OPENAI_API_KEY"),
+}
+```
+
+#### Configuração TypeScript (Jevlish)
+
+```typescript
+import { configure } from 'jevlish';
+
+configure({
+  apiKey: process.env.TYPESAFE_API_KEY,
+  model: 'jev-1.13',  // default: jev-latest
+  policy: {
+    noul: {
+      yesAbove: 0.9,  // default: 0.8
+      noBelow: 0.05,  // default: 0.2
+    },
+  },
+});
+```
+
+### Endpoints de API
+
+| Rota | Endpoint | Model ID | Key | Tipo yes/no |
+|------|----------|-----------|-----|-------------|
+| TypeSafe API | POST api.typesafe.ai/v1/systemone | jev-latest / jev-1.13.0 | TypeSafe key | noul |
+| Vercel AI Gateway | POST ai-gateway.vercel.sh/v1/evaluate | typesafe-ai/jev | Vercel OIDC token | boolean |
+| OpenRouter | POST openrouter.ai/api/v1/systemone | typesafe/jev-1.13 | OpenRouter key | noul |
+| Cloudflare Workers | env.AI.run('typesafe/jev') | typesafe/jev | Worker binding | noul |
+
+### Especificações
+
+| Propriedade | Valor |
+|-------------|-------|
+| Model ID | typesafe-ai/jev |
+| Model type | Evaluation |
+| Context window | 64K tokens por request (32K para state) |
+| Output token charge | None (input tokens only) |
+| Pricing | $0.042 por 1M input tokens |
+| Data controls | Zero Data Retention, No Training (per request) |
+| Observability | AI Gateway logs, custom reporting, budgets |
+
+### Links
+- **TypeSafe AI:** https://typesafe.ai
+- **Jev Tools:** https://jevai.tools
+- **Vercel Guide:** https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk
+- **Jevlish:** https://jacobgoldfarb.github.io/Jevlish
+- **Learn Jev:** https://harshithsunku.github.io/learn-jev-end-to-end
+
+---
 
 ### Descrição
 A Moonshot AI oferece a plataforma Kimi com modelos de geração e raciocínio avançado. Conhecida pelo contexto longo e capacidade de processar documentos extensos.
@@ -999,8 +1582,11 @@ A Moonshot AI oferece a plataforma Kimi com modelos de geração e raciocínio a
 | Baidu | ERNIE 4.5 Turbo | ~$0.11 | ~$0.44 | ~$0.275 |
 | Zhipu | GLM-5.3-Flash | ~$0.11 | ~$0.39 | ~$0.25 |
 | Moonshot | Kimi K2.5 | ~$0.56 | ~$2.94 | ~$1.75 |
+| xAI | Grok 4.7 (curto) | $2.00 | $6.00 | $4.00 |
+| xAI | Grok 4.20 (curto) | $1.25 | $2.50 | $1.875 |
+| JEV AI | jev-latest | $0.042 | $0.00 | $0.021 |
 
-**Nota:** Preços chineses convertidos de Yuan para Dólar (aproximadamente ¥1 = $0.14). Preços podem variar por região e promoções.
+**Nota:** Preços chineses convertidos de Yuan para Dólar (aproximadamente ¥1 = $0.14). Preços podem variar por região e promoções. JEV AI cobra apenas input tokens.
 
 ---
 
