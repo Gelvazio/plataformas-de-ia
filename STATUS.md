@@ -3,7 +3,7 @@
 **Objetivo:** Criar documentação completa de plataformas de IA, incluindo modelos, preços, ferramentas e conceitos técnicos
 **Partes interessadas:** gelva
 **Links:** [Regras](C:\Users\gelva\.claude\CLAUDE.md)
-**Próximo passo:** Commit das adições ao AGENTS.md
+**Próximo passo:** Aceite do usuário no item 11.10 (Etapa 11, [docs/pagina-models-openrouter-ai.md](docs/pagina-models-openrouter-ai.md)); depois retomar o item 10.2 (aba Ferramentas no index.html)
 
 Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 
@@ -85,6 +85,28 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 9.2 | Atualizar comparativo de custos com MiniMax | ✅ Concluído | 2026-10-12 | Leitura do arquivo |
 | 9.3 | Adicionar MiniMax ao dashboard (index.html) | ✅ Concluído | 2026-10-12 | Visualização |
 | 9.4 | Commit e push | ✅ Concluído | 2026-10-12 | Git log: 904cf5a |
+
+## Etapa 10 — Seção Ferramentas e Recursos (aprovada em 2026-10-13, plano: docs/criar-secao-ferramentas-recursos.md)
+| Item | Descrição | Status | Concluído em | Verificação |
+|------|-----------|--------|--------------|-------------|
+| 10.1 | Adicionar seção 24 "Ferramentas e Recursos para IA" ao AGENTS.md | ✅ Concluído | 2026-10-13 | Edição aplicada |
+| 10.2 | Aba "Ferramentas" no index.html | ⬜ Pendente | — | Interrompida pelo usuário; retomar depois |
+| 10.3 | Reorganizar SKILLS.md | ⬜ Pendente | — | — |
+| 10.4 | Commit | ⬜ Pendente | — | — |
+
+## Etapa 11 — Página models-openrouter-ai.html (plano: docs/pagina-models-openrouter-ai.md, aguardando aprovação)
+| Item | Descrição | Status | Concluído em | Verificação |
+|------|-----------|--------|--------------|-------------|
+| 11.1 | Extrair os 19 modelos gratuitos do JSON | ✅ Concluído | 2026-10-13 | node --check, total = 19 |
+| 11.2 | Constantes da página | ✅ Concluído | 2026-10-13 | node --check |
+| 11.3 | Lógica de filtros e ordenação | ✅ Concluído | 2026-10-13 | node --check + execução em Node (19 / 6 com 1M / 16 com tools / 17 só texto) |
+| 11.4 | Renderização e tema | ✅ Concluído | 2026-10-13 | node --check |
+| 11.5 | Estilos da página | ✅ Concluído | 2026-10-13 | Leitura |
+| 11.6 | Página models-openrouter-ai.html | ✅ Concluído | 2026-10-13 | Leitura, caminhos dos scripts conferidos |
+| 11.7 | Menu no index.html | ✅ Concluído | 2026-10-13 | Leitura |
+| 11.8 | Correção: texto do preço sumindo no tema escuro (index.html) | ✅ Concluído | 2026-10-13 | `.card-price` e `body` agora definem `color` |
+| 11.9 | Commit local | ✅ Concluído | 2026-10-13 | git diff --cached |
+| 11.10 | Aceite do usuário | ⬜ Pendente | — | Usuário abrir models-openrouter-ai.html e conferir |
 
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
