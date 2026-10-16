@@ -90,9 +90,9 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | Item | Descrição | Status | Concluído em | Verificação |
 |------|-----------|--------|--------------|-------------|
 | 10.1 | Adicionar seção 24 "Ferramentas e Recursos para IA" ao AGENTS.md | ✅ Concluído | 2026-10-13 | Edição aplicada |
-| 10.2 | Aba "Ferramentas" no index.html | ⬜ Pendente | — | Interrompida pelo usuário; retomar depois |
-| 10.3 | Reorganizar SKILLS.md | ⬜ Pendente | — | — |
-| 10.4 | Commit | ⬜ Pendente | — | — |
+| 10.2 | Aba "Ferramentas" no index.html · `MEDIO · effort medium` | ⬜ Pendente | — | Interrompida pelo usuário; retomar depois |
+| 10.3 | Reorganizar SKILLS.md · `LEVE · effort low` | ⬜ Pendente | — | — |
+| 10.4 | Commit · `LEVE · effort low` | ⬜ Pendente | — | — |
 
 ## Etapa 11 — Página models-openrouter-ai.html (plano: docs/pagina-models-openrouter-ai.md, aguardando aprovação)
 | Item | Descrição | Status | Concluído em | Verificação |
@@ -106,7 +106,7 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 11.7 | Menu no index.html | ✅ Concluído | 2026-10-13 | Leitura |
 | 11.8 | Correção: texto do preço sumindo no tema escuro (index.html) | ✅ Concluído | 2026-10-13 | `.card-price` e `body` agora definem `color` |
 | 11.9 | Commit local | ✅ Concluído | 2026-10-13 | git diff --cached |
-| 11.10 | Aceite do usuário | ⬜ Pendente | — | Usuário abrir models-openrouter-ai.html e conferir |
+| 11.10 | Aceite do usuário · `LEVE · effort low` | ⬜ Pendente | — | Usuário abrir models-openrouter-ai.html e conferir |
 
 ## Riscos
 | Risco | Chance | Impacto | Plano B | Situação |
