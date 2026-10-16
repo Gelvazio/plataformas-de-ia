@@ -1,5 +1,12 @@
 # Plataformas de IA - Detalhes e Preços
 
+<!-- rules-ai:global -->
+> 🌐 **Regras globais:** além das regras deste arquivo, valem as regras globais de
+> `C:ontesules-ai` (`regras/*.md`, entregues a cada IA pelo arquivo global dela). Em divergência,
+> a regra deste projeto prevalece, e o usuário decide o que fazer com cada divergência
+> (`rules-ai/CONFLITOS.md`). Ao finalizar uma tarefa: commit + push.
+
+
 Este documento contém informações detalhadas sobre as principais plataformas de Inteligência Artificial, suas características, modelos disponíveis e estrutura de preços.
 
 ---
@@ -1778,6 +1785,226 @@ A Moonshot AI oferece a plataforma Kimi com modelos de geração e raciocínio a
 - **Zhipu AI (GLM):** https://www.bigmodel.cn
 - **Moonshot AI (Kimi):** https://www.moonshot.cn
 - **MiniMax AI:** https://platform.minimax.io
+
+---
+
+## 24. Ferramentas e Recursos para IA
+
+### 📚 Plataformas para Criar Skills
+
+#### Omniroute
+- **Site:** https://www.omniroute.online/pt-BR/#features
+- **Descrição:** Plataforma para criar roteiros e workflows inteligentes com IA
+- **Características:** 
+  - Construtor visual de workflows
+  - Integração com múltiplas IAs
+  - Automação de processos
+- **Casos de Uso:** Automação de negócios, workflows de atendimento, processos repetitivos
+- **Preço:** Sob consulta
+
+#### book-to-skill
+- **Repository:** https://github.com/virgiliojr94/book-to-skill
+- **Descrição:** Ferramenta open-source para transformar conteúdo de livros em skills
+- **Características:** 
+  - Conversão automática de texto em estrutura de skill
+  - Suporte a múltiplos formatos
+  - Integração com GitHub
+- **Casos de Uso:** Criar skills educacionais, converter documentação em skills
+- **Preço:** Gratuito (open-source)
+
+#### rea.tools
+- **Site:** https://rea.tools/pt-BR/
+- **Descrição:** Plataforma de automação com IA para criação de workflows
+- **Características:** 
+  - Designer visual de automações
+  - Suporte a APIs e integrações
+  - Agendamento de tarefas
+- **Casos de Uso:** Marketing automation, integração de sistemas, processamento de dados
+- **Preço:** Planos a partir de USD 29/mês
+
+---
+
+### 🤖 10 Principais Skills para Claude
+
+#### 1️⃣ Ponytail
+- **Descrição:** Torna o código Claude mais preguiçoso (lazy) como um senior dev experiente — escreve menos, reutiliza mais
+- **Características:**
+  - Detecção automática de padrões de reutilização
+  - Sugestões de abstrações
+  - Otimização de código existente
+- **Casos de Uso:** Refatoração, redução de duplicação, código limpo
+- **Como Usar:** Ativar no início da sessão para optimizar escrita de código
+- **Link:** Integrado em Claude Code
+
+#### 2️⃣ Matt Pocock Skills
+- **Descrição:** 25+ workflows de senior engineer cobrindo engenharia e produtividade
+- **Características:**
+  - TDD (Test-Driven Development)
+  - Code review estruturado
+  - Arquitetura de software
+  - Handoffs e documentação
+  - TypeScript advanced patterns
+- **Casos de Uso:** Desenvolvimento profissional, reviews, planejamento arquitetural
+- **Link:** Integrado em Claude
+
+#### 3️⃣ I Have ADHD
+- **Descrição:** Torna Claude aberto com o próximo passo, usa instruções numeradas e elimina fluff
+- **Características:**
+  - Respostas estruturadas e diretas
+  - Instruções claras e numeradas
+  - Foco em ação
+  - Eliminação de texto desnecessário
+- **Casos de Uso:** Tarefas com deficit de atenção, workflows rápidos, comunicação clara
+- **Como Usar:** Mencionar "use I Have ADHD mode" para ativar
+
+#### 4️⃣ Security Audit Skill (Cloudflare)
+- **Descrição:** Transforma Claude em auditor de segurança com verificações validadas
+- **Características:**
+  - Análise de vulnerabilidades (OWASP Top 10)
+  - Detecção de exposição de credenciais
+  - Verificação de integridade
+  - Relatórios estruturados
+- **Casos de Uso:** Code review de segurança, análise de vulnerabilidades, compliance
+- **Link:** https://github.com/cloudflare/security-audit-skill
+
+#### 5️⃣ Superpowers
+- **Descrição:** Workflow dev completo — brainstorming, TDD, code review, git, handoffs
+- **Características:**
+  - Brainstorming estruturado
+  - Test-Driven Development
+  - Verificação de código
+  - Fluxo Git assistido
+  - Planejamento de arquitetura
+- **Casos de Uso:** Projetos completos, workflows profissionais, desenvolvimento agnóstico
+- **Como Usar:** `/brainstorm`, `/test-driven`, `/code-review`, etc.
+
+#### 6️⃣ Diagram Design
+- **Descrição:** Produz diagramas limpos e on-brand (arquitetura, fluxos, mockups)
+- **Características:**
+  - Diagramas em HTML/SVG
+  - Design system integrado
+  - Temas customizáveis
+  - Flowcharts e arquitetura
+- **Casos de Uso:** Documentação visual, apresentações, arquitetura de sistemas
+- **Suporte:** Mermaid, PlantUML, SVG customizado
+
+#### 7️⃣ Humanizer
+- **Descrição:** Reescreve texto gerado por IA para parecer escrito por um humano
+- **Características:**
+  - Remoção de padrões "AI-sounding"
+  - Aumento de naturalidade
+  - Preservação de conteúdo
+  - Ajuste de tom
+- **Casos de Uso:** Redação, marketing, comunicação profissional
+- **Como Usar:** Colar texto gerado e pedir para humanizar
+
+#### 8️⃣ Graphify
+- **Descrição:** Converte codebase, docs e schemas em knowledge graph queryável
+- **Características:**
+  - Análise automática de codebase
+  - Extração de relações
+  - Queries de relações
+  - Visualização de dependências
+- **Casos de Uso:** Onboarding, refatoração, análise de impacto, documentação
+- **Instalação:** `/graphify` no Claude Code
+
+#### 9️⃣ Addy Osmani Skills
+- **Descrição:** 25 workflows de senior engineer (Addy Osmani) — specs, performance, deployment
+- **Características:**
+  - Web Performance
+  - Core Web Vitals
+  - Loading strategies
+  - Image optimization
+  - CSS/JS optimization
+- **Casos de Uso:** Otimização web, performance, arquitetura frontend
+- **Foco:** Performance, escalabilidade, user experience
+
+#### 🔟 Impeccable
+- **Descrição:** Dá design taste ao Claude para que frontend pare de parecer gerado por IA
+- **Características:**
+  - Design system awareness
+  - Componentes estilizados
+  - Tipografia profissional
+  - Layouts modernos
+  - Acessibilidade
+- **Casos de Uso:** UI/UX, componentes frontend, design visual
+- **Como Usar:** Ativar ao criar componentes React/Vue/HTML
+
+---
+
+### 📊 Recursos Adicionais
+
+#### Skill Board
+- **Site:** https://www.skillleaderboard.com/
+- **Descrição:** Leaderboard e marketplace de skills de IA — descobre e compartilha skills
+- **Características:**
+  - Ranking de skills por relevância
+  - Reviews da comunidade
+  - Estatísticas de uso
+  - Filtro por categoria
+- **Casos de Uso:** Descobrir novos skills, compartilhar criações, análise de tendências
+- **Preço:** Gratuito
+
+#### Foreman (Revisor de IA)
+- **Site:** https://www.withforeman.com/
+- **Descrição:** Plataforma para revisar e auditar outputs de IA
+- **Características:**
+  - Reviews estruturados
+  - Colaboração em time
+  - Métricas de qualidade
+  - Feedback automático
+- **Casos de Uso:** QA de conteúdo IA, validação de outputs, compliance
+- **Preço:** Sob consulta
+
+#### MinerU (Conversor PDF → Markdown)
+- **Repository:** https://github.com/opendatalab/mineru
+- **Descrição:** Ferramenta open-source para converter PDFs em Markdown de alta qualidade
+- **Características:**
+  - Preservação de layout
+  - Extração de tabelas
+  - OCR integrado
+  - Suporte a múltiplos idiomas
+- **Casos de Uso:** Processamento de documentos, ingestão de dados, RAG
+- **Preço:** Gratuito (open-source)
+- **Instalação:** `pip install pdf2md` ou via GitHub
+
+---
+
+### 🔗 Links de Referência
+
+**Comunidades e Recursos:**
+- Skill Board (Leaderboard): https://www.skillleaderboard.com/
+- GitHub Awesome Skills: https://github.com/topics/ai-skill
+- Claude Community: https://claude.ai/
+
+**Documentação:**
+- Claude API: https://docs.anthropic.com
+- Claude Code: https://claude.com/product/claude-code
+- Skill Creation Guide: https://docs.anthropic.com/en/docs/guides/building-agent-systems
+
+**Ferramentas Correlatas:**
+- VS Code Extensions: https://marketplace.visualstudio.com/VSCode
+- JetBrains AI Assistant: https://www.jetbrains.com/ai/
+- GitHub Copilot: https://github.com/features/copilot
+
+---
+
+## 📌 Resumo: Quando Usar Cada Ferramenta
+
+| Objetivo | Ferramenta Recomendada | Por Quê |
+|----------|----------------------|---------|
+| **Criar Skills** | Omniroute ou book-to-skill | Construção visual e conversão automática |
+| **Código limpo** | Ponytail | Reduz duplicação, melhora reutilização |
+| **TDD/Code Review** | Superpowers ou Matt Pocock | Workflows estruturados e profissionais |
+| **Segurança** | Security Audit (Cloudflare) | Análise validada de vulnerabilidades |
+| **Design/UI** | Impeccable | Parar de parecer IA-gerado |
+| **Diagramas** | Diagram Design | Arquitetura e fluxos visuais |
+| **Análise Codebase** | Graphify | Entender relações e dependências |
+| **Performance Web** | Addy Osmani Skills | Core Web Vitals e otimização |
+| **Humanizar texto** | Humanizer | Reescrever para parecer natural |
+| **Processar PDFs** | MinerU | Converter documentos para Markdown |
+| **Descobrir Skills** | Skill Board | Encontrar novas ferramentas |
+| **QA de IA** | Foreman | Validar qualidade de outputs |
 
 ---
 
